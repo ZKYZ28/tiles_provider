@@ -1,0 +1,26 @@
+.header-container {
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 15vh;
+    z-index: 9999;
+    width: 100%;
+}
+
+.header-container a {
+    position: relative;
+    text-decoration: none;
+}
+
+.header-container a:hover:after {
+    transform: scaleX(1);
+}
+
+#dropdownAvatarName {
+    top: calc(100% + 5px);
+}
+
+@media only screen and (max-width: 767px) {
+    .header-container {
+        height: 90px;
+    }
+}

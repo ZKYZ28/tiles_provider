@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2.5rem;
+    max-height: 100%;
+}
+
+.tile {
+    position: relative;
+    overflow: hidden;
+}
+
+.tile:nth-child(1){
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.tile:nth-child(2),
+.tile:nth-child(3){
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 650px){
+    .container{
+        display: block;
+    }
+    .tile{
+        margin-bottom: 1rem;
+    }
+}
